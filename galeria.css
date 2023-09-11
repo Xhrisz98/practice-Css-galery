@@ -1,0 +1,219 @@
+*{
+  font-size: 24px;
+}
+body 
+{
+  background: radial-gradient(circle,#038844,#15845d);
+}
+.conteiner
+{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows:  80px repeat(2, 1fr) 80px;
+  grid-auto-flow: dense;
+  min-height: 100vh;
+  max-height: 100%;
+}
+.conteiner-nav
+{
+  background-color: #00ff99;
+  grid-column: 1/4;
+}
+/*--------------------TRABAJO EN CONTENIDO QUE ESTE DENTRO DE MI CAJA NAV--------------*/
+.conteiner__nav-ul
+{
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+.conteiner__nav__ul-li
+{
+ display: inline-block;
+ width: 20%;
+ text-align: center;
+ 
+}
+.conteiner__nav__ul-li a
+{
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+.conteiner__nav__ul-li:hover 
+{
+  background: radial-gradient(circle, #02564f, #069f95);
+  height: 100%;
+  padding-top: 20px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.conteiner__nav__ul-li:hover a
+{
+ color: #000;
+}
+
+/*-----------TRABAJARE EN MI SECTION*/
+.conteiner-section
+{
+  grid-row: 2/4;
+  grid-column: 1/5;
+  background: radial-gradient(circle, #ccc, #888);
+  display: grid;
+  grid-template-columns: repeat( auto-fill, minmax(150px, 1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+  grid-gap:10px;
+}
+img 
+{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+img:first-child
+{
+  grid-column: 1/3;
+}
+
+img:nth-child(9)
+{
+  grid-column:3/5;
+  grid-row: 2 /4;
+}  
+
+.conteiner__section-side
+{
+  
+  flex-grow: 4;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  max-width: 1400px;
+}
+.conteiner__section-aside
+{
+  
+  background-color: #dd0077;
+  flex: 1;
+  
+}
+.conteiner-footer
+{
+  background-color: #0066ff;
+  grid-column: 1/4;
+  grid-row: 4/5;
+}
+
+
+/*----DESARROLLO DE LA INTERFAZ PARA MOBILE---*/
+@media screen and (max-width:400px) 
+{
+  .conteiner
+{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows:  80px repeat(2, 1fr) 80px;
+  grid-auto-flow: dense;
+  min-height: 100vh;
+  max-height: 100%;
+}
+.conteiner-nav
+{
+  background-color: #00ff99;
+  grid-column: 1/4;
+}
+/*--------------------TRABAJO EN CONTENIDO QUE ESTE DENTRO DE MI CAJA NAV--------------*/
+.conteiner__nav-ul
+{
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+.conteiner__nav__ul-li
+{
+ display: inline-block;
+ width: 20%;
+ text-align: center;
+}
+.conteiner__nav__ul-li a
+{
+  color: #fff;
+  text-decoration: none;
+}
+.conteiner__nav__ul-li:hover 
+{
+  background: radial-gradient(circle, #02564f, #069f95);
+  height: 100%;
+  padding-top: 20px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.conteiner__nav__ul-li:hover a
+{
+ color: #000;
+}
+
+/*-----------TRABAJARE EN MI SECTION*/
+.conteiner-section
+{
+  grid-row: 2/4;
+  grid-column: 1/5;
+  background: radial-gradient(circle, #ccc, #888);
+  display: grid;
+  grid-template-columns: repeat( auto-fill, minmax(100px, 1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+  grid-gap:10px;
+}
+img 
+{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+img:first-child
+{
+  grid-column: 1/3;
+}
+
+img:nth-child(9)
+{
+  grid-column:3/5;
+  grid-row: 2 /4;
+}  
+
+.conteiner__section-side
+{
+  
+  flex-grow: 4;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  max-width: 1400px;
+}
+.conteiner__section-aside
+{
+  
+  background-color: #dd0077;
+  flex: 1;
+  
+}
+.conteiner-footer
+{
+  background-color: #0066ff;
+  grid-column: 1/4;
+  grid-row: 4/5;
+}
+}
